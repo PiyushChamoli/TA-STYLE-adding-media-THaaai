@@ -72,7 +72,7 @@ body{
 .all-header{
     color: #393939;
     font-size: 28px;
-    padding: 13px 0;
+    padding-top: 15px;
     font-weight: 500;
     text-align: center;
 }
@@ -173,35 +173,41 @@ body{
     font-weight: 400;
     line-height: 1.8;
 }
-.outside{
-    background-color: #ffffff;
-    max-width: 100%;
-    border-radius: 8px;
-}
-.inside{
-    background-color: #1e1e1e;
-    padding: 2px;
-    border-radius: 8px;
-}
-.pg{
-    padding: 7px 0;
-}
-.pg1{
-    width: 85%;
-}
-.pg2{
-    width: 90%;
-}
-.pg3{
-    width: 75%;
-}
-.pg4{
-    width: 70%;
-}
 .sec-two-col img{
     width: 100%;
 }
-
+.progress-item h3{
+    color: #323232;
+    font-size: 14px;
+    font-weight: 500;
+}
+.progress-item p{
+    color: #323232;
+    font-size: 14px;
+}
+.progress-item{
+    margin-bottom: 10px;
+}
+progress{
+    width: 100%;
+    appearance: none;
+    height: 4px;
+}
+progress::-webkit-progress-bar{
+    background-color: #ffffff;
+}
+progress::-webkit-progress-value{
+    background-color: black;
+}
+.dot{
+    width: 9px;
+    height: 9px;
+    background-color: #d8d8d8;
+    display: inline-block;
+}
+.dot-wrap{
+    margin-bottom: 15px;
+}
 /*Section-Three*/
 
 .section-three{
@@ -265,6 +271,7 @@ body{
 .section-four img{
     width: 22%;
     margin: 25px 0;
+    border-radius: 5px;
 }
 
 /*Section-Five*/
@@ -276,7 +283,10 @@ body{
 }
 .section-five h2{
     color: #ffffff;
+}
+.section-five .dot-wrap{
     padding-bottom: 60px;
+    text-align: center;
 }
 .five-col{
     width: 60%;
